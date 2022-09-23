@@ -1,0 +1,11 @@
+type: provider
+config:
+    provider_package: hmd_operators.trino
+    provider_class: TrinoOperator
+    params:
+        sql:|
+        create schema if not exists {{ ns_context['schema_name'] }}
+        trino_conn_id: trino_conn
+        autocommit: true
+    run_params:
+        schema_name: demo
