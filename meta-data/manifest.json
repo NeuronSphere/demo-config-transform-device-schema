@@ -7,6 +7,9 @@
     "version": "0.1.3",
     "identifier": "ms-projects-admin-reg1-hmdd2-254196995570"
   },
+  "build": {
+    "commands": [["transform"]]
+  },
   "generate": {
     "trino_ddl": {
       "contexts": ["ref:tables"],
