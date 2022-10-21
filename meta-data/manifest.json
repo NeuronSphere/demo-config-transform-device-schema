@@ -33,7 +33,7 @@
     }
   },
   "templates": [
-    "ns:demo-tmpl-transform-trino@0.1.14:project_template_set",
+    "ns:demo-tmpl-transform-trino@0.1.16:project_template_set",
     "ns:hmd-tmpl-transforms@0.1.5:project_template_set"
   ]
 }
