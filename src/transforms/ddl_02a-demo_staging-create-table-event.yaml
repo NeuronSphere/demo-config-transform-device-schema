@@ -12,8 +12,8 @@ config:
 
             create table if not exists {{ ns_context['schema_name'] }}.event (
                 
-                "event_detail.code" int,
-                "event_detail.message" varchar,
+                "event_detail_code" int,
+                "event_detail_message" varchar,
                 "type" varchar,
                 "timestamp" timestamp,
                 "serial_number" varchar,

@@ -12,12 +12,12 @@ config:
 
             create table if not exists {{ ns_context['schema_name'] }}.telemetry (
                 
-                "position.x" int,
-                "position.y" int,
-                "position.z" int,
-                "rotation.pitch" double,
-                "rotation.roll" double,
-                "rotation.yaw" double,
+                "position_x" int,
+                "position_y" int,
+                "position_z" int,
+                "rotation_pitch" double,
+                "rotation_roll" double,
+                "rotation_yaw" double,
                 "type" varchar,
                 "timestamp" timestamp,
                 "serial_number" varchar,
