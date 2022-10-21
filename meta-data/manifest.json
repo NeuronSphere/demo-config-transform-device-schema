@@ -13,7 +13,7 @@
   "generate": {
     "trino_ddl": {
       "contexts": ["ref:tables"],
-      "templates": ["demo-tmpl-transform-trino/trino_ddl_transform"],
+      "templates": ["hmd-tmpl-transforms/trino_ddl_transform"],
       "variables": {
         "schema_name": "demo",
         "provider_package": "hmd_operators.trino",
@@ -32,8 +32,5 @@
       "each": ["ns:demo-notebooks-idl@0.1.13:configuration:*.hmdstruct"]
     }
   },
-  "templates": [
-    "ns:demo-tmpl-transform-trino@0.1.16:project_template_set",
-    "ns:hmd-tmpl-transforms@0.1.5:project_template_set"
-  ]
+  "templates": ["ns:hmd-tmpl-transforms@0.1.6:project_template_set"]
 }
