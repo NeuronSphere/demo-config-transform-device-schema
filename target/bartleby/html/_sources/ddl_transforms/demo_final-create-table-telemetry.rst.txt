@@ -1,0 +1,40 @@
+.. demo_final-create-table-telemetry
+
+telemetry Final Table Creation
+=================================================================
+
+Transform that runs Trino SQL statement to create final table for telemetry tabular structure to ingest data from staging table.
+
+SQL:
+++++
+
+.. code-block:: sql
+
+    create table if not exists {{ ns_context['schema_name'] }}.telemetry (
+    
+    "position_x" int,
+    "position_y" int,
+    "position_z" int,
+    "rotation_pitch" double,
+    "rotation_roll" double,
+    "rotation_yaw" double,
+    "type" varchar,
+    "timestamp" timestamp,
+    "serial_number" varchar,
+    "case" varchar,
+
+    "p_iso_date" date, 
+    "p_serial_num" varchar, 
+    "p_dev_run" varchar
+) with (
+  format = 'parquet',
+  partitioned_by = ARRAY[ 'p_iso_date', 'p_serial_num', 'p_dev_run' ]
+)
+
+Default Run Parameters:
++++++++++++++++++++++++
+
+.. code-block:: yaml
+
+    schema_name: demo_final
+    location: TRINO_BUCKET

@@ -9,10 +9,11 @@ config:
     provider_class: TrinoOperator
     params:
         sql: |
+
             CREATE OR REPLACE VIEW {{ ns_context['schema_name'] }}.event AS
-            SELECT * FROM demo_final.event
+            SELECT * FROM demo_final.event_0_1_1
+
         trino_conn_id: trino_conn_overwrite
         autocommit: true
     run_params:
         schema_name: demo_ux
-        entity_path: 

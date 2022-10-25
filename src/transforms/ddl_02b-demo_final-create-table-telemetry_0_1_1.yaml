@@ -10,7 +10,7 @@ config:
     params:
         sql: |
 
-            create table if not exists {{ ns_context['schema_name'] }}.telemetry (
+            create table if not exists {{ ns_context['schema_name'] }}.telemetry_0_1_1 (
                 
                 "position_x" int,
                 "position_y" int,
@@ -35,4 +35,3 @@ config:
         autocommit: true
     run_params:
         schema_name: demo_final
-        entity_path: 

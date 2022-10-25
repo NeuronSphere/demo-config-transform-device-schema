@@ -8,12 +8,20 @@
     "identifier": "ms-projects-admin-reg1-hmdd2-254196995570"
   },
   "build": {
-    "commands": [["transform"]]
+    "commands": [
+      [
+        "transform"
+      ]
+    ]
   },
   "generate": {
     "trino_ddl": {
-      "contexts": ["ref:tables"],
-      "templates": ["hmd-tmpl-transforms/trino_ddl_transform"],
+      "contexts": [
+        "ref:tables"
+      ],
+      "templates": [
+        "hmd-tmpl-transforms/trino_ddl_transform"
+      ],
       "variables": {
         "schema_name": "demo",
         "provider_package": "hmd_operators.trino",
@@ -25,12 +33,18 @@
     "tables": {
       "extend": "ref:tab_structs",
       "merge": {
-        "each": ["ns:demo-notebooks-idl@0.1.13:configuration:manifestations/*"]
+        "each": [
+          "ns:demo-notebooks-idl@0.1.14:configuration:manifestations/*"
+        ]
       }
     },
     "tab_structs": {
-      "each": ["ns:demo-notebooks-idl@0.1.13:configuration:*.hmdstruct"]
+      "each": [
+        "ns:demo-notebooks-idl@0.1.14:configuration:*.hmdstruct"
+      ]
     }
   },
-  "templates": ["ns:hmd-tmpl-transforms@0.1.6:project_template_set"]
+  "templates": [
+    "ns:hmd-tmpl-transforms@0.1.14:project_template_set"
+  ]
 }

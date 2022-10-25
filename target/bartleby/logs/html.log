@@ -1,0 +1,49 @@
+Running Sphinx v5.2.2
+making output directory... done
+[autosummary] generating autosummary for: ddl_transforms/demo_final-create-table-event.rst, ddl_transforms/demo_final-create-table-telemetry.rst, ddl_transforms/demo_staging-create-table-event.rst, ddl_transforms/demo_staging-create-table-telemetry.rst, ddl_transforms/demo_ux-create-view-event.rst, ddl_transforms/demo_ux-create-view-telemetry.rst, index.rst
+building [mo]: targets for 0 po files that are out of date
+building [html]: targets for 7 source files that are out of date
+updating environment: [new config] 7 added, 0 changed, 0 removed
+reading sources... [ 14%] ddl_transforms/demo_final-create-table-event
+reading sources... [ 28%] ddl_transforms/demo_final-create-table-telemetry
+reading sources... [ 42%] ddl_transforms/demo_staging-create-table-event
+reading sources... [ 57%] ddl_transforms/demo_staging-create-table-telemetry
+reading sources... [ 71%] ddl_transforms/demo_ux-create-view-event
+reading sources... [ 85%] ddl_transforms/demo_ux-create-view-telemetry
+reading sources... [100%] index
+
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_final-create-table-event.rst:25: WARNING: Explicit markup ends without a blank line; unexpected unindent.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_final-create-table-event.rst:28: WARNING: Definition list ends without a blank line; unexpected unindent.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_final-create-table-telemetry.rst:29: WARNING: Explicit markup ends without a blank line; unexpected unindent.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_final-create-table-telemetry.rst:32: WARNING: Definition list ends without a blank line; unexpected unindent.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_staging-create-table-event.rst:25: WARNING: Explicit markup ends without a blank line; unexpected unindent.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_staging-create-table-event.rst:28: WARNING: Definition list ends without a blank line; unexpected unindent.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_staging-create-table-telemetry.rst:29: WARNING: Explicit markup ends without a blank line; unexpected unindent.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_staging-create-table-telemetry.rst:32: WARNING: Definition list ends without a blank line; unexpected unindent.
+looking for now-outdated files... none found
+pickling environment... done
+checking consistency... done
+preparing documents... done
+writing output... [ 14%] ddl_transforms/demo_final-create-table-event
+writing output... [ 28%] ddl_transforms/demo_final-create-table-telemetry
+writing output... [ 42%] ddl_transforms/demo_staging-create-table-event
+writing output... [ 57%] ddl_transforms/demo_staging-create-table-telemetry
+writing output... [ 71%] ddl_transforms/demo_ux-create-view-event
+writing output... [ 85%] ddl_transforms/demo_ux-create-view-telemetry
+writing output... [100%] index
+
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_final-create-table-event.rst:11: WARNING: Could not lex literal_block as "sql". Highlighting skipped.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_final-create-table-telemetry.rst:11: WARNING: Could not lex literal_block as "sql". Highlighting skipped.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_staging-create-table-event.rst:11: WARNING: Could not lex literal_block as "sql". Highlighting skipped.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_staging-create-table-telemetry.rst:11: WARNING: Could not lex literal_block as "sql". Highlighting skipped.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_ux-create-view-event.rst:11: WARNING: Could not lex literal_block as "sql". Highlighting skipped.
+/tmp/tmpxduf2b83/source/ddl_transforms/demo_ux-create-view-telemetry.rst:11: WARNING: Could not lex literal_block as "sql". Highlighting skipped.
+generating indices... genindex done
+writing additional pages... search done
+copying static files... done
+copying extra files... done
+dumping search index in English (code: en)... done
+dumping object inventory... done
+build succeeded, 14 warnings.
+
+The HTML pages are in build/html.

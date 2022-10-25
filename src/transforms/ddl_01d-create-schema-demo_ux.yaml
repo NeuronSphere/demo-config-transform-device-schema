@@ -9,8 +9,9 @@ config:
     provider_class: TrinoOperator
     params:
         sql: |
-            create schema if not exists {{ ns_context['schema_name'] }}
+            create schema if not exists {{ ns_context['schema_name'] }} with (location = '{{ ns_context['location'] }}/{{ ns_context['schema_name'] }}')
         trino_conn_id: trino_conn
         autocommit: true
     run_params:
         schema_name: demo_ux
+        location: TRINO_BUCKET

@@ -9,3 +9,4 @@ config:
         autocommit: true
     run_params:
         schema_name: demo
+        location: TRINO_BUCKET

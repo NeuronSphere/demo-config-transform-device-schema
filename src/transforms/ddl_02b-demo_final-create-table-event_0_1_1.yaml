@@ -10,7 +10,7 @@ config:
     params:
         sql: |
 
-            create table if not exists {{ ns_context['schema_name'] }}.event (
+            create table if not exists {{ ns_context['schema_name'] }}.event_0_1_1 (
                 
                 "event_detail_code" int,
                 "event_detail_message" varchar,
@@ -31,4 +31,3 @@ config:
         autocommit: true
     run_params:
         schema_name: demo_final
-        entity_path: 

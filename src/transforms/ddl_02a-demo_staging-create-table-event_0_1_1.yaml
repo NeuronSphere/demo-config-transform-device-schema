@@ -3,21 +3,17 @@ query_config:
     query_name: by_transform_name_dependent_transform
     query_value:
         dep_tf_name: ddl_01b-create-schema-demo_staging
-        tf_name: ddl_02a-demo_staging-create-table-telemetry
+        tf_name: ddl_02a-demo_staging-create-table-event
 config:
     provider_package: hmd_operators.trino
     provider_class: TrinoOperator
     params:
         sql: |
 
-            create table if not exists {{ ns_context['schema_name'] }}.telemetry (
+            create table if not exists {{ ns_context['schema_name'] }}.event_0_1_1 (
                 
-                "position_x" int,
-                "position_y" int,
-                "position_z" int,
-                "rotation_pitch" double,
-                "rotation_roll" double,
-                "rotation_yaw" double,
+                "event_detail_code" int,
+                "event_detail_message" varchar,
                 "type" varchar,
                 "timestamp" timestamp,
                 "serial_number" varchar,
@@ -35,4 +31,4 @@ config:
         autocommit: true
     run_params:
         schema_name: demo_staging
-        entity_path: 
+        location: TRINO_BUCKET

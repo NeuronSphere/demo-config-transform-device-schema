@@ -1,0 +1,38 @@
+.. demo_staging-create-table-event
+
+event Staging Table Creation
+=================================================================
+
+Transform that runs Trino SQL statement to create staging table for event tabular structure to ingest source data.
+
+SQL:
+++++
+
+.. code-block:: sql
+
+
+    create table if not exists {{ ns_context['schema_name'] }}.event_0_1_1 (
+        
+        "event_detail_code" int,
+        "event_detail_message" varchar,
+        "type" varchar,
+        "timestamp" timestamp,
+        "serial_number" varchar,
+        "case" varchar,
+
+        "p_iso_date" date, 
+        "p_serial_num" varchar, 
+        "p_dev_run" varchar
+    ) with (
+      format = 'parquet',
+      partitioned_by = ARRAY[ 'p_iso_date', 'p_serial_num', 'p_dev_run' ]
+    )
+
+
+Default Run Parameters:
++++++++++++++++++++++++
+
+.. code-block:: yaml
+
+    schema_name: demo_staging
+    location: TRINO_BUCKET
