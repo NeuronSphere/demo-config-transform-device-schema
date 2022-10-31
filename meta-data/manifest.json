@@ -60,6 +60,6 @@
     }
   },
   "templates": [
-    "ns:hmd-tmpl-transforms@0.1.14:project_template_set"
+    "ns:hmd-tmpl-transforms@0.1.17:project_template_set"
   ]
 }
