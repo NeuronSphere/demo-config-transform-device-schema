@@ -15,7 +15,7 @@ services:
     image: ghcr.io/hmdlabs/hmd-tf-bartleby:0.1.19
     secrets: []
     volumes:
-    - source: /home/aburg/hmdd2-demo/studio/projects/demo-config-transform-device-schema/docs
+    - source: /home/aburg/hmdd2-demo/studio/projects/demo-config-transform-device-schema
       target: /hmd_transform/input
       type: bind
     - source: /home/aburg/hmdd2-demo/studio/projects/demo-config-transform-device-schema/target/bartleby

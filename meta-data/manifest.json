@@ -59,7 +59,7 @@
       ]
     }
   },
-  "templates": [
+  "external_templates": [
     "ns:hmd-tmpl-transforms@0.1.19:project_template_set"
   ]
 }
