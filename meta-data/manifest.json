@@ -8,18 +8,10 @@
     "identifier": "ms-projects-admin-reg1-hmdd2-254196995570"
   },
   "build": {
-    "commands": [
-      [
-        "transform"
-      ]
-    ]
+    "commands": [["transform"]]
   },
   "deploy": {
-    "commands": [
-      [
-        "transform"
-      ]
-    ],
+    "commands": [["transform"]],
     "dependencies": {
       "ms-transform": {
         "repo_class_name": "hmd-ms-transform",
@@ -31,12 +23,8 @@
   },
   "generate": {
     "trino_ddl": {
-      "contexts": [
-        "ref:tables"
-      ],
-      "templates": [
-        "hmd-tmpl-transforms/trino_ddl_transform"
-      ],
+      "contexts": ["ref:tables"],
+      "templates": ["hmd-tmpl-transforms/trino_ddl_transform"],
       "variables": {
         "schema_name": "demo",
         "provider_package": "hmd_operators.trino",
@@ -49,17 +37,17 @@
       "extend": "ref:tab_structs",
       "merge": {
         "each": [
-          "ns:demo-notebooks-idl@0.1.14:configuration:manifestations/*"
+          "gh:NeuronSphere/demo-notebooks-idl:src/tabular_structures/manifestations/*"
         ]
       }
     },
     "tab_structs": {
       "each": [
-        "ns:demo-notebooks-idl@0.1.14:configuration:*.hmdstruct"
+        "gh:NeuronSphere/demo-notebooks-idl:src/tabular_structures/*.hmdstruct"
       ]
     }
   },
   "external_templates": [
-    "ns:hmd-tmpl-transforms@0.1.19:project_template_set"
+    "gh:NeuronSphere/hmd-tmpl-transforms:src/mickey/templates/"
   ]
 }
