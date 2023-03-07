@@ -21,8 +21,8 @@ The username and password for the local instance is `user`.
 
 ## Running the Transforms
 
-Before trying to run these transforms, please ensure that DAGs with the same name as the YAML files appear at [http://localhost:175/home/].
-Also, you will need to generate some data via a Notebook in [https://github.com/NeuronSphere/demo-notebook-idl/].
+Before trying to run these transforms, please ensure that DAGs with the same name as the YAML files appear at http://localhost:175/home/.
+Also, you will need to generate some data via a Notebook in https://github.com/NeuronSphere/demo-notebooks-idl/.
 The generated data is placed in `$HMD_HOME/data/raw/<iso_date>/<serial_num>/<dev_run>`.
 The folders `iso_date`, `serial_num`, and `dev_run` are randomly generated and will need to be used in the run parameters for the transforms, as shown below.
 
