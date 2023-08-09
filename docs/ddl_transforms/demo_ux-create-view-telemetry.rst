@@ -11,8 +11,8 @@ SQL:
 .. code-block:: sql
 
 
-    CREATE OR REPLACE VIEW {{ ns_context['schema_name'] }}.telemetry AS
-    SELECT * FROM demo_final.telemetry_0_1_1
+    CREATE OR REPLACE VIEW {{ ns_context['schema_name'] }}_ux.telemetry AS
+    SELECT * FROM {{ ns_context['schema_name'] }}_final.telemetry_0_1_1
 
 
 Default Run Parameters:

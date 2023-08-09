@@ -11,8 +11,8 @@ SQL:
 .. code-block:: sql
 
 
-    CREATE OR REPLACE VIEW {{ ns_context['schema_name'] }}.event AS
-    SELECT * FROM demo_final.event_0_1_1
+    CREATE OR REPLACE VIEW {{ ns_context['schema_name'] }}_ux.event AS
+    SELECT * FROM {{ ns_context['schema_name'] }}_final.event_0_1_1
 
 
 Default Run Parameters:
